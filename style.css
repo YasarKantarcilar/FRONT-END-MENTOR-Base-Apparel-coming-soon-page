@@ -1,0 +1,261 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    height: 100;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+#img-container{
+    display: flex;
+    height: 100vh;
+}
+
+#text-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 12%;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+#logo-ds{
+    margin-bottom: 50px;
+}
+
+#p1-ds{
+    font-weight: 100;
+    color: hsl(0, 36%, 70%);
+    font-size: 55px;
+    letter-spacing: 20px;
+}
+
+#p2-ds{
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+    font-size: 50px;
+    letter-spacing: 20px;    
+}
+
+#p3-ds{
+    font-weight: 600;
+    font-size: 13px;
+    color: hsl(0, 36%, 70%);
+    margin-top: 30px;
+    line-height: 180%;
+}
+
+#email-container{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+}
+
+#email-container input{
+    border: 1px solid hsl(0, 36%, 70%, 0.4); 
+    border-radius: 50px;
+    width: 350px;
+    height: 46px;
+    padding-left: 20px;
+    outline: none;
+}
+
+#email-container input:focus{
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+#email-container input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+
+#email-container button{
+    position: absolute;
+    margin-left: 310px;
+    width: 90px;
+    height: 50px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: 0px;
+    border-radius: 50px;
+}
+
+#email-container button:hover{
+    background-image: linear-gradient(135deg, hsl(0, 86%, 86%),  hsl(0, 20%, 80%));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#background-svg{
+    position: absolute;
+    height: 99vh;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+
+#mobile-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-logo{
+    margin: 20px 50px 30px;
+    width: 375px;
+    display: flex;
+    justify-content: start;
+    align-items: center
+}
+
+#mobile-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-hero img{
+    width: 325px;
+    height: 200px;
+}
+
+#mobile-text{
+    margin-top: 50px;
+}
+
+#p1-mobile{
+    font-weight: 100;
+    color: hsl(0, 36%, 70%);
+    font-size: 35px;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+#p2-mobile{
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+    font-size: 30px;
+    letter-spacing: 20px;
+    text-align: center; 
+}
+
+#p3-mobile{
+    font-weight: 600;
+    font-size: 10px;
+    color: hsl(0, 36%, 70%);
+    margin-top: 30px;
+    line-height: 180%;
+    text-align: center;
+}
+
+#email-container-mobile{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 250px;
+    height: 40px;
+}
+
+#email-container-mobile input{
+    border: 1px solid hsl(0, 36%, 70%, 0.4); 
+    border-radius: 50px;
+    width: 250px;
+    height: 36px;
+    padding-left: 20px;
+    outline: none;
+}
+
+#email-container-mobile input:focus{
+    border: 1px solid hsl(0, 36%, 70%)
+}
+
+#email-container-mobile input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+
+#email-container-mobile button{
+    position: absolute;
+    margin-left: 210px;
+    width: 60px;
+    height: 40px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: 0px;
+    border-radius: 50px;
+}
+
+#email-container-mobile button:hover{
+    background-image: linear-gradient(135deg, hsl(0, 86%, 86%),  hsl(0, 20%, 80%));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#validation{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 10px;
+    color: red;
+}
+
+
+@media (max-width: 675px) {
+    #main-container{
+        display: none;
+    }
+
+    #mobile-container{
+        display: flex;
+    }
+}
